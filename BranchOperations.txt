@@ -12,4 +12,8 @@ In order to push this new branch to Github use below command:
 	git push origin testbranch 
 	
 	**Note all files from main branch will show under newly creaed branch. If new create a new file under main branch you will still no longer in the New Branch untill merge is performed.
-	
+
+--Git Merge
+consider you are in Main Branch and now you want to merge the changes done in other branch, then first SWITCH to main branch in Git bash and then execute below command to merge from other branch to main. (This is Vise versa in case want to merge from main to test branch)
+--git merge <<branchname>>
+-- then status, add commit push
