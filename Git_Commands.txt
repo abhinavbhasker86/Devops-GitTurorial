@@ -21,9 +21,11 @@ Git Commands:
 	
 --Git Commit and Logs commands:
 	git status -- this shows any chnages in direcory. Uncommited files will appear in red color. Post add, they will appear green.
-	git diff  -- This command will show the changes made in already commited file and show the difference.
+	git diff  -- This command will show the changes made in previously commited file and show the difference between working area and staging areal for all files.
+	git diff <<filename>> -- This show the difference between working area and staging areal for specific file
 	git add . -- This command put all the changes into staging Area
 	git commit -m "Commemnts" -- This will commit the file in git repository with comments
+	git commit -am "Commemnts" -- This will add and commit the file in git repository with comments (no need of separate "git add ." command. **This command will not work for any new files created as they are still not Tracked by git repository. So for new files you still need to use "git add . file command.
 	git commt --if you just do this and press enter, it will open an editor to put comments. you can add multiline comments here.
 	git log  -- This command will show last 10 commits (all authors) in Desc order. with info commit number, Author, Date and time, Commit Comment.
 	git log --author="<<Author Name>> or <<Email Id>>" -- This command is used to identify commits done by specific Author.
@@ -39,6 +41,7 @@ Git Commands:
 	Once this is done, then go to new gut repository using cd command
 		cd Devops-GitTurorial
 		git pull --This command will pull all the files from Github to your local machine
+		git push --This command will push your local commited file (i.e. after add and commit) to Github Repository
 	
 	
 
@@ -58,3 +61,5 @@ Git Commands:
 	Save and exit	":wq"	--Writes changes and quits
 	Save and exit (shortcut)	"ZZ" --(uppercase)	Same as :wq
 	Exit without saving	":q!"	--Quits and discards changes
+-- you can also use echo command to write into file
+	echo "This is sample text" >> <<filename>>
