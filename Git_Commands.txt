@@ -1,0 +1,60 @@
+Git Commands:
+--Configure user:
+	git config --global user.name "Abhinav Bhasker"
+	git config --global user.email "abbhaske@gmail.com"
+	git --list
+
+--Git command to show current directory
+	pwd
+
+--Create any folder using Bash
+	CD /e 
+	cd /Devops/git
+	
+--Setup folder as git directory path under E:/Devops/git execute below command:
+	git init
+	Output: Initialized empty Git repository in C:/Users/abhin/Documents/Abhinav/Personal/Study/Devops/Git/.git/
+	**Note Still you will not be able to see .git Directory under that folder as ".git" is hidden Folder
+	
+	To view this hidden directory from your Git Bash terminal, use below command
+	ls -a 
+	
+--Git Commit and Logs commands:
+	git status -- this shows any chnages in direcory. Uncommited files will appear in red color. Post add, they will appear green.
+	git diff  -- This command will show the changes made in already commited file and show the difference.
+	git add . -- This command put all the changes into staging Area
+	git commit -m "Commemnts" -- This will commit the file in git repository with comments
+	git commt --if you just do this and press enter, it will open an editor to put comments. you can add multiline comments here.
+	git log  -- This command will show last 10 commits (all authors) in Desc order. with info commit number, Author, Date and time, Commit Comment.
+	git log --author="<<Author Name>> or <<Email Id>>" -- This command is used to identify commits done by specific Author.
+
+-------------------------------------------CReate Main Repository on GITHub-------------------------------------------
+	Login to your github account
+	CReate a New Repository
+	Copy HTTPS path
+	Go to git bash (and navigate to required folder from where checkin will happen)
+	cd /Devops/
+	Create Mian path for your project by using below command:
+		git clone -b main https://github.com/abhinavbhasker86/Devops-GitTurorial.git
+	Once this is done, then go to new gut repository using cd command
+		cd Devops-GitTurorial
+		git pull --This command will pull all the files from Github to your local machine
+	
+	
+
+-------------------------------------------Generic Commands-------------------------------------------
+-- command to create a file direcly from bash
+	touch <<filename>>
+--use vi command to edit file using bash
+	vi <<filename>>
+	press "Esc" to come out of edit mode
+	and use below commands to make chages:
+	To Save (and Exit)
+
+	Once you’re in command mode (after pressing Esc):
+
+	Action	Command	Explanation
+	Save file (without exiting)	":w"	--Writes (saves) your changes
+	Save and exit	":wq"	--Writes changes and quits
+	Save and exit (shortcut)	"ZZ" --(uppercase)	Same as :wq
+	Exit without saving	":q!"	--Quits and discards changes
