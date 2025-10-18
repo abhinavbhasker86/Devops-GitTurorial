@@ -1,4 +1,6 @@
-ssh-keygen -t ed25519 -C "abbhaske@gmail.com"
+--Added steps for 200~Github-Git_ssh_connection - This was not needed for me as my Push was going fine withou this. But still good to know
+execute below on git bash:
+	ssh-keygen -t ed25519 -C "abbhaske@gmail.com"
 after this it will ask for filename - Just Press Enter
 after this it will ask for paraphrase - Just Press Enter
 	o/p will be something like this:
