@@ -4,3 +4,12 @@
 	git branch <<branchname>> --This will create a new branch with name provided
 --Switch branch
 	git switch <<branchname>> --This will switch the branch from crrent to branch whose name was provided
+	
+**Even after this if you check GitHub, this new branch will not show. And all files in local will show under same folder.
+--Perform Add and Commit. 
+
+In order to push this new branch to Github use below command:
+	git push origin testbranch 
+	
+	**Note all files from main branch will show under newly creaed branch. If new create a new file under main branch you will still no longer in the New Branch untill merge is performed.
+	
