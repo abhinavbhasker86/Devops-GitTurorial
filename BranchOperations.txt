@@ -1,5 +1,6 @@
 --Execute below command to check the Branch
 	git branch  --it will show all branches and "*" will be shown against your current branch where all changes will commit
+	git branch  -a  --it will list all branches including hidden.
 --create a new Branch
 	git branch <<branchname>> --This will create a new branch with name provided
 --Switch branch
@@ -17,3 +18,10 @@ In order to push this new branch to Github use below command:
 consider you are in Main Branch and now you want to merge the changes done in other branch, then first SWITCH to main branch in Git bash and then execute below command to merge from other branch to main. (This is Vise versa in case want to merge from main to test branch)
 --git merge <<branchname>>
 -- then status, add commit push
+
+
+--Rename Branch
+git branch -m <<old_branch_name>> <<new_branch_name>> -- We can rename the branch even being in that branch
+
+--Delete Branch
+git branch -d <<Branch Name>> --YOu need to be in Main Branch to delete other Branch
